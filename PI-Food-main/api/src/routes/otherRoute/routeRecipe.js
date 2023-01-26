@@ -4,12 +4,16 @@ const {
     createRecipeHandler,
     getRecipesHandler 
 } = require('../../handlers/handlerRecipe');
-
+const validateRecipe = require('../../middleware/midRecipe');
 const routeRecipe = Router();
 
-routeRecipe.use("/", getRecipesHandler);
-routeRecipe.use("/:id", getRecipeHandlerId);
-routeRecipe.use("/", createRecipeHandler);
+
+routeRecipe.get("/", getRecipesHandler);
+
+routeRecipe.get("/:id", getRecipeHandlerId);
+
+routeRecipe.post("/", validateRecipe, createRecipeHandler);
+
 
 
 module.exports = routeRecipe;
