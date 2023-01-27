@@ -1,13 +1,11 @@
-const {createDiet} = require('../controlers/controlDiet')
+const { getDiet } = require('../controlers/controlDiet')
+const { Diet } = require('../db')
 
-const dietHandlerCreate = (req, res) =>{
-    const {name, userId} = req.body;
-    try {
-        const newDiet = createDiet(name, userId)
-        res.status(201).json(newDiet);
-    } catch (error) {
-        res.status(400).json({error:error.message});
-    }
+const getDietHandler = async (req, res) =>{
+    await getDiet()
+    const allDiets = await Diet.findAll() 
+    
+    res.status(200).json(allDiets)
 }
 
-module.exports = {dietHandlerCreate,}
+module.exports = {getDietHandler,}
