@@ -1,7 +1,7 @@
 const Form = ()=>{
     return(
         <>
-        <h1>Estoy en el Form</h1>
+        <h1>Estoy en el Form </h1>
         </>
     )
 }
