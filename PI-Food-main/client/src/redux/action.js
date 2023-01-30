@@ -1,5 +1,7 @@
 import axios from 'axios';
 
+// const urlDBase = "http://localhost:3001"
+
 export const GET_RECIPES = "GET_RECIPES"
 
 export const getRecipes = () =>{

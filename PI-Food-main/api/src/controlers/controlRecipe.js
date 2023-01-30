@@ -56,8 +56,8 @@ const searchRecipeByName = async (name) => {
     return [ ...filterApi, ...dbRecipes];
 }
 
-const createRecipe = async (name, image, healthScore, summary, steps, diets) =>
-    await Recipe.create({name, image, healthScore, summary, steps, diets}
+const createRecipe = async (name, healthScore, summary, steps) =>
+    await Recipe.create({name, healthScore, summary, steps}
 );
 
 const getRecipeById = async (id, source) =>{

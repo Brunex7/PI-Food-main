@@ -1,6 +1,32 @@
 .card{
-    border: 1px solid black;
-    width: 350px;
-    height: 500px;
-    
+    border: 3px solid whitesmoke;
+    width: 300px;
+    height: 400px;
+    margin: 40px;
+    background-color: rgb(37, 35, 35);
+}
+
+.imag{
+    width: 100%;
+    padding: 10px 20px 0px 0px;
+    border-radius: 0px;
+    margin: 0 20px;
+}
+
+.card h1{
+    display: flex;
+    border: 2px solid;
+    padding: 10px 50px;
+    align-content: center;
+    color: whitesmoke;
+    font-size: medium;
+    width: 200px;
+}
+
+.card p{
+    position: relative;
+    padding:  20px;
+    color: whitesmoke;
+    font-size: larger;
+    font-weight: bold;
 }

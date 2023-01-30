@@ -3,10 +3,9 @@ import style from './Card.module.css'
 const Card = (props) => {
     return(
         <div className={style.card}>
-            <p>{props.name}</p>
-            <img src={props.image} alt={props.name}/>
+            <h1>{props.name}</h1>
+            <img className={style.imag} src={props.image} alt={props.name}/>
             <p>HealthScore:{props.healthScore}</p>
-
         </div>
     )
 }

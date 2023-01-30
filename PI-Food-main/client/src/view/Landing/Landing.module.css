@@ -1,0 +1,61 @@
+.container{
+    max-width: 1200px;
+    
+
+}
+.container h1{
+    position: fixed;
+    right: 0;
+    width: 300px;
+    margin: 30px;
+    color: whitesmoke;
+}
+
+.container h2{
+    position: fixed;
+    top: 160px;
+    margin: 30px;
+    width: 425px;
+    font-size: xxx-large;
+    text-align: left;
+    font-weight: bold;
+}
+
+.container p{
+    position: fixed;
+    top: 300px;
+    margin: 30px;
+    width: 400px;
+    text-align: left;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+.container img{
+    position: fixed;
+    bottom: 185px;
+    border-radius: 0 0 0 200px ;
+    width: 800px;
+}
+
+.container a{
+    position: fixed;
+    left: 0;
+    margin: 30px;
+    top: 420px;
+    background-color: rgb(85, 85, 8);
+    color: whitesmoke;
+    font-size: large;
+    border: 0;
+    border-radius: 10px;
+    text-decoration: none;
+    padding:20px 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    font-size: x-large;
+}
+
+.container a:hover{
+    background-color: rgb(109, 109, 11);
+}
