@@ -8,10 +8,10 @@ const CardsContainer = () =>{
 
     return(
         <div className={style.container}>
-            {recipes.results?.map(rec =>{
+            {recipes.map(rec =>{
                 return <Card 
                 id = {rec.id}
-                name = {rec.title}
+                name = {rec.name}
                 image = {rec.image}
                 healthScore = {rec.healthScore}
                 />
